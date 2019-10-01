@@ -508,7 +508,7 @@
             const int LessThan = 2;
 
             // Act
-            Action act = () => Prevent.ValueLessThan(Parameter, LessThan, nameof(Parameter));
+            Action act = () => Prevent.ValueLessThanOrEqualTo(Parameter, LessThan, nameof(Parameter));
 
             // Assert
             act.Should().NotThrow();

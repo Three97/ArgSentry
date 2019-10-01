@@ -1,18 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Version>1.0.0</Version>
-    <PackageReleaseNotes>Updated target frameworks.</PackageReleaseNotes>
+    <Version>1.0.1</Version>
+    <PackageReleaseNotes>Updated target frameworks by removing ones implicitly covered by unit tests (1.4, 1.5, 1.6 => .NET Framework 4.6.1).</PackageReleaseNotes>
 
-    <TargetFrameworks>
-      netstandard2.0;
-      netstandard1.6;
-      netstandard1.5;
-      netstandard1.4;
-      netstandard1.3;
-      netstandard1.2;
-      netstandard1.1
-    </TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;netstandard1.3;netstandard1.2;netstandard1.1</TargetFrameworks>
 
     <Title>ArgSentry</Title>
     <Description>ArgSentry is a utility class for validating method argument values.</Description>
@@ -20,15 +12,15 @@
     <AssemblyTitle>ArgSentry</AssemblyTitle>
     <AssemblyName>ArgSentry</AssemblyName>
     <Authors>Eric S. Davis</Authors>
-    <Copyright>2018 Eric S. Davis</Copyright>
-    
+    <Copyright>2019 Eric S. Davis</Copyright>
+
     <PackageId>ArgSentry</PackageId>
     <PackageTags>arg;sentry;prevent;argument;parameter;validation</PackageTags>
     <PackageIconUrl>https://raw.githubusercontent.com/eric-davis/ArgSentry/master/ICON.png</PackageIconUrl>
     <PackageLicense>https://raw.githubusercontent.com/eric-davis/ArgSentry/master/LICENSE</PackageLicense>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/eric-davis/ArgSentry.git</RepositoryUrl>
-    
+
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
